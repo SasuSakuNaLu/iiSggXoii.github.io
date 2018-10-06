@@ -1,0 +1,43 @@
+<style>
+.caption{
+
+  background: linear-gradient(to right, #00CCFF, MidnightBlue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title{
+ background: linear-gradient(to right, #00CCFF, Blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.thumb-sized {
+  height: 20px
+}
+
+body{
+  background: linear-gradient(to right, MidnightBlue, Gold)
+}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.1.0.js">
+function clickedLike() {
+  var count = $("#click-count").text()
+  console.log(count+1)
+  $("#click-count").text(String(Number(count) + 1))
+  //console.log("click received")
+}
+</script>
+<h1 class="title">My Profile picture</h1>
+
+<div id="profile-pic">
+  <img id='placeholder' src="https://thumbs.gfycat.com/QualifiedSpotlessHorse-size_restricted.gif">
+  
+  <p class="caption">I THINK THAT SASUSAKU IS THE BEST SHIP NAME EVER!</p>
+    
+  <img class='thumb-sized' src="http://img2.thejournal.ie/inline/2413139/original/?width=500&version=2413139"</img>
+  <button onclick="clickedLike()">Like!</button>
+  <span id="click-count">0</span>
+</div>
+    
